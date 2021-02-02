@@ -5,11 +5,11 @@ public class date {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		System.out.println("30 + 40 = ", (30 + 40));
-		System.out.println("30 * 40 = ", 30 * 40);
-		System.out.println("40 - 30 = ", (30 - 40));
-		System.out.println("40 / 20 = ", 40 / 2);
-		System.out.println("¿©·¯ºÐ ¹Ý°©½À´Ï´Ù");
+		System.out.println("30 + 40 = " + (30 + 40));
+		System.out.println("30 * 40 = " + 30 * 40);
+		System.out.println("40 - 30 = " + (30 - 40));
+		System.out.println("40 / 20 = " + 40 / 2);
+		System.out.println("ë°˜ê°‘ìŠµë‹ˆë‹¤");
 		
 	}
 
