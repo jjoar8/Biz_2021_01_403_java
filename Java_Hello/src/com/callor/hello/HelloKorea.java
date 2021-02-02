@@ -32,10 +32,13 @@ package com.callor.hello;
 public class HelloKorea {
 
 	/*
-	 * main() method라고 부른다 클래스를 만들고 컴파일을 수행한 후 실행을 했을때 반드시 있어야하는 명령문
+	 * main() method라고 부른다 클래스를 만들고 컴파일을 수행한 후 
+	 * 실행을 했을때 반드시 있어야하는 명령문
 	 */
+	
 	// 명령문의 시작부분에 //를 붙이면
 	// 명령문은 없는 것과 같다
+	
 	public static void main(String args[]) {
 		// Console 출력(명령)문
 		System.out.println("30 + 40 = " + (30 + 40));
