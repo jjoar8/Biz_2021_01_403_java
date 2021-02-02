@@ -1,5 +1,5 @@
 package com.callor.hello;
 
-public class JavaNew {
+public class HelloNew {
 
 }
