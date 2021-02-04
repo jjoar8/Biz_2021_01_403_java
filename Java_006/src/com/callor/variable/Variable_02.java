@@ -1,6 +1,6 @@
-package com.callor.varriable;
+package com.callor.variable;
 
-public class Varriable_02 {
+public class Variable_02 {
 
 	public static void main(String[] args) {
 		
