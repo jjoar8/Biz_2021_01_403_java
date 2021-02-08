@@ -7,7 +7,9 @@ public class Multiple_01 {
 		int sumMulti = 0;
 		
 		for(int i = 0; i < 100; i++) {
+			
 			int num = i + 7;
+			
 			if(num % 3 == 0) {
 				sumMulti += num;
 			}
