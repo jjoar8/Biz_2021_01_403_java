@@ -12,13 +12,16 @@ public class Odd_Even_01 {
 		int sumClass = 0;
 		
 		for(int i = 0; i < 100; i++) {
-
-			if((i + 1) % 2 == 0) {
-				sumEven += (i + 1);
+			
+			// 1 ~ 100
+			int num = i + 1;
+			
+			if(num % 2 == 0) {
+				sumEven += num;
 			}
 			
-			if((i + 1) % 2 == 1) {
-				sumOdd += (i + 1);
+			if(num % 2 == 1) {
+				sumOdd += num;
 			}
 			
 			// 선생님 코딩
