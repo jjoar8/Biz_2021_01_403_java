@@ -6,7 +6,6 @@ public class App_02 {
 	
 	public static void main(String[] args) {
 		
-		// System.in = 컴퓨터 키보드를 연결하는 것
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.print("숫자 입력(2 ~ 9) >> ");
@@ -14,7 +13,7 @@ public class App_02 {
 
 		System.out.println("================================");
 		
-		if(numInput >= 10) {
+		if(numInput > 9) {
 			System.out.println("2 ~ 9까지 중 1개의 숫자를 입력");
 		} else if(numInput < 2) {
 			System.out.println("2 ~ 9까지 중 1개의 숫자를 입력");
@@ -33,7 +32,19 @@ public class App_02 {
 		}
 		
 		System.out.println("================================");
-	
+		
+		/* 선생님 코드
+		
+		boolean bYes2 = numInput >= 2;
+		boolean bYes9 = numInput <= 9;
+		if(bYes2 && bYes9) { 
+			// for() 구구단
+		} else {
+			// 입력한 숫자
+			// 경구
+		}
+		*/
+		
 	}
 
 }

@@ -25,6 +25,10 @@ public class App_01 {
 			System.out.print(" = ");
 			System.out.println(numInput * numDan);
 			
+			// if(numDan == 9) {
+				// break;
+			// }
+			
 		}
 		
 		System.out.println("================");
