@@ -36,6 +36,10 @@ public class ClassServiceV3 {
 	public void scope() {
 		System.out.println("숫자를 입력하세요");
 		int intNum1 = scan.nextInt();
+		// method 키워드에 void가 있으면
+		// return 명령문이 생략되어 있는 것과 같다
+		// 복습 때 확인하기
+		return;
 	}
 	
 	public void algebra() {
