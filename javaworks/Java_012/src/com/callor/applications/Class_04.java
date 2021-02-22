@@ -16,13 +16,15 @@ public class Class_04 {
 	 * 메서드가 아닌 곳 메서드 이외의 곳
 	 */
 	
-	Scanner scan = new Scanner(System.in);
-	// private 어쩌구
+	Scanner scan1 = new Scanner(System.in);
+	private int num2 = scan1.nextInt();
 	
 	public static void main(String[] args) {
 		
 		/*
-		 * 못적음
+		 * main() method의 지역변수
+		 * 지역변수를 선언할 경우는 초기화를 하지않고
+		 * 다른 method의 return값을 저장할 수 있다
 		 */
 		
 		Scanner scan = new Scanner(System.in);
