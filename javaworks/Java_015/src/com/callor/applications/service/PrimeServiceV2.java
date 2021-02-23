@@ -7,17 +7,10 @@ public class PrimeServiceV2 {
 		int pos = 0;
 		for(pos = 2; pos < num1; pos++) {
 			if(num1 % pos == 0) {
-				break;
+				return -1;
 			}
 		}
-		
-		if(pos < num1) {
-			return -1;
-		} else {
-			return num1;
-		}
-		
+		return num1;
 		
 	}
-
 }
