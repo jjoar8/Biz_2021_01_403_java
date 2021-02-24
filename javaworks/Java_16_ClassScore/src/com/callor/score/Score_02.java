@@ -23,24 +23,21 @@ public class Score_02 {
 		
 		ScoreService_01 ssV1 = new ScoreService_01();
 		
-		// ssV1 scoreSum() method
-		int[] intScoreSum = new int[strName.length];
-		for(int i = 0; i < strName.length; i++) {
-			intScoreSum[i] = ssV1.scoreSum(intKor[i], intEng[i], intMath[i]);
-		}
-		
-		// ssV1 scoreAvg() method
-		float[] floatScoreAvg = new float[strName.length];
-		for(int i = 0; i < strName.length; i++) {
-			floatScoreAvg[i] = ssV1.scoreAvg(intScoreSum[i]);
-		}
-		
 		System.out.println("================================================");
 		System.out.println("이름\t국어\t영어\t수학\t총점\t평균");
 		System.out.println("------------------------------------------------");
 		
-		// ssV1 scorePrint() method
 		for(int i = 0; i < strName.length; i++) {
+			
+			// ssV1 scoreSum() method
+			int[] intScoreSum = new int[strName.length];
+			intScoreSum[i] = ssV1.scoreSum(intKor[i], intEng[i], intMath[i]);
+		
+			// ssV1 scoreAvg() method
+			float[] floatScoreAvg = new float[strName.length];
+			floatScoreAvg[i] = ssV1.scoreAvg(intScoreSum[i]);
+		
+			// ssV1 scorePrint() method
 			ssV1.scorePrint(strName[i], intKor[i], intEng[i], intMath[i], intScoreSum[i], floatScoreAvg[i]);
 		}
 		
