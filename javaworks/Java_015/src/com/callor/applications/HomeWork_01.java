@@ -11,7 +11,7 @@ public class HomeWork_01 {
 		Random rnd = new Random();
 		int[] intNum = new int[100];
 		for(int i = 0; i < intNum.length; i++) {
-			intNum[i] = rnd.nextInt(10000) + 1;
+			intNum[i] = rnd.nextInt(100000) + 2;
 		}
 		
 		PrimeServiceV2 psV2 = new PrimeServiceV2();
