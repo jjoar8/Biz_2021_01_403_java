@@ -12,47 +12,49 @@ public class Score_01 {
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.println("==================================");
-		System.out.println("학생 정보 입력");
+		System.out.println("학생 성적 입력 시스템 v1");
 		System.out.println("----------------------------------");
 		
 		System.out.print("이름 >> ");
 		scVO.strName = scan.nextLine();
 		
-		while(true) {
-			try {
-			System.out.print("국어 >> ");
-			String strKor = scan.nextLine();
-			scVO.intKor = Integer.valueOf(strKor);			
-			} catch (NumberFormatException e) {
-				System.out.println("반드시 숫자만 입력하세요");
-				continue;
-			} // end try
-			if(scVO.intKor < 50) {
-				System.out.println("점수는 50점 이상 입력 가능합니다");
-			} else if(scVO.intKor > 100) {
-				System.out.println("점수는 100점까지 입력 가능합니다");
-			} else {
-				break;
-			}// end if
-		} // end while
+//		수업 진행 중 ScoreVO의 intKor를 private으로 바꿔서 오류가 난다
 		
-		while(true) {
-			try {
-			System.out.print("영어 >> ");
-			String strEng = scan.nextLine();
-			scVO.intEng = Integer.valueOf(strEng);			
-			} catch (NumberFormatException e) {
-				System.out.println("반드시 숫자만 입력하세요");
-				continue;
-			} // end try
-			if(scVO.intEng < 50) {
-				System.out.println("점수는 50점 이상 입력 가능합니다");
-			} else if(scVO.intEng > 100) {
-				System.out.println("점수는 100점까지 입력 가능합니다");
-			} else {
-				break;
-			}// end if
-		} // end while
+//		while(true) {
+//			try {
+//			System.out.print("국어 >> ");
+//			String strKor = scan.nextLine();
+//			scVO.intKor = Integer.valueOf(strKor);			
+//			} catch (NumberFormatException e) {
+//				System.out.println("반드시 숫자만 입력하세요");
+//				continue;
+//			} // end try
+//			if(scVO.intKor < 50) {
+//				System.out.println("점수는 50점 이상 입력 가능합니다");
+//			} else if(scVO.intKor > 100) {
+//				System.out.println("점수는 100점까지 입력 가능합니다");
+//			} else {
+//				break;
+//			}// end if
+//		} // end while
+		
+//		while(true) {
+//			try {
+//			System.out.print("영어 >> ");
+//			String strEng = scan.nextLine();
+//			scVO.intEng = Integer.valueOf(strEng);			
+//			} catch (NumberFormatException e) {
+//				System.out.println("반드시 숫자만 입력하세요");
+//				continue;
+//			} // end try
+//			if(scVO.intEng < 50) {
+//				System.out.println("점수는 50점 이상 입력 가능합니다");
+//			} else if(scVO.intEng > 100) {
+//				System.out.println("점수는 100점까지 입력 가능합니다");
+//			} else {
+//				break;
+//			}// end if
+//		} // end while
 		
 		while(true) {
 			try {
@@ -76,7 +78,7 @@ public class Score_01 {
 		System.out.println("===============================");
 		System.out.println("이름\t국어\t영어\t수학");
 		System.out.println("-------------------------------");
-		System.out.printf("%s\t%d\t%d\t%d\n", scVO.strName, scVO.intKor, scVO.intEng, scVO.intMath);
+//		System.out.printf("%s\t%d\t%d\t%d\n", scVO.strName, scVO.intKor, scVO.intEng, scVO.intMath);
 		System.out.println("===============================");
 
 	
