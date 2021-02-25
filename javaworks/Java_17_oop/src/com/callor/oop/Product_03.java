@@ -35,21 +35,23 @@ public class Product_03 {
 			
 			while(true) {
 				System.out.print("매입단가 >> ");
-				String iPrice = scan.nextLine();
-				if(Integer.valueOf(iPrice) < 0) {
+				String strIPrice = scan.nextLine();
+				int intIPrice = Integer.valueOf(strIPrice);
+				if(intIPrice < 0) {
 					System.out.println("0원 이상 입력하시오");
 				} else {
-					pVOs[i].iPrice = Integer.valueOf(iPrice);
+					pVOs[i].iPrice = intIPrice;
 					break;
 				}
 			}
 			while(true) {
 				System.out.print("매출단가 >> ");
-				String oPrice = scan.nextLine();
-				if(Integer.valueOf(oPrice) < 0) {
+				String strOPrice = scan.nextLine();
+				int intOPrice = Integer.valueOf(strOPrice);
+				if(intOPrice < 0) {
 					System.out.println("0원 이상 입력하시오");
 				} else {
-					pVOs[i].oPrice = Integer.valueOf(oPrice);
+					pVOs[i].oPrice = intOPrice;
 					break;
 				}
 			}
