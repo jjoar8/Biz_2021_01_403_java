@@ -2,7 +2,7 @@ package com.callor.score;
 
 import com.callor.score.model.StudentVO;
 
-public class Studen_01 {
+public class Student_01 {
 
 	public static void main(String[] args) {
 		
