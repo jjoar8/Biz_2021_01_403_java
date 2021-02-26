@@ -17,7 +17,7 @@ public class CartControllerV3 {
 			
 			// 제목보이기
 			System.out.println("=========================");
-			System.out.println("쇼핑카드 상품추가");
+			System.out.println("쇼핑카트 상품추가");
 			System.out.println("-------------------------");
 			
 			// 입력받기

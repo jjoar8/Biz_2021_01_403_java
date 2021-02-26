@@ -9,7 +9,7 @@ public class CartControllerV5 {
 		CartServiceV1 csV1 = new CartServiceV1();
 		
 		System.out.println("=========================");
-		System.out.println("쇼핑카드 상품추가");
+		System.out.println("쇼핑카트 상품추가");
 		System.out.println("-------------------------");
 		
 		csV1.inputCart();
