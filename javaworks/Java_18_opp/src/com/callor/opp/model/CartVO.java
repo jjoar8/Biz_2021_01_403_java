@@ -64,7 +64,7 @@ public class CartVO {
 	}
 	public void setCartQty(int cartQty) {
 		this.cartQty = cartQty;
-	}
+	}	
 	public int getCartPrice() {
 		return cartPrice;
 	}

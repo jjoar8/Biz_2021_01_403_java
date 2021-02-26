@@ -52,7 +52,7 @@ public class CartControllerV2 {
 		cartVO = new CartVO[4]; // 처음에 만든 CartVO[3] 소멸
 		
 		cartVO[3] = new CartVO();
-		cartVO[3].setCartUserName("조아라");
+		cartVO[3].setCartUserName("이곡길");
 		cartVO[3].setCartPName("바나나우유");
 		
 		System.out.println("======================");
