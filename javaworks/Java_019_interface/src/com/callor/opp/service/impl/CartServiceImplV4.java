@@ -23,7 +23,7 @@ public class CartServiceImplV4 implements CartService {
 	public void inputCart() {
 
 		System.out.println("=========================================");
-		System.out.println("빛나라 카드 시스템 V4");
+		System.out.println("빛나라 카트 시스템 V4");
 		System.out.println("-----------------------------------------");
 
 		System.out.print("구매자 >> ");
