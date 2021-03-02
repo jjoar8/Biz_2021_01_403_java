@@ -9,7 +9,7 @@ import com.callor.opp.model.CartVO;
 public class CartServiceV1 {
 	
 	// CartServiceV1 클래스에 cartList 객체를 인스턴스변수로 선언
-	List<CartVO> cartList = new ArrayList<CartVO>();
+	private List<CartVO> cartList = new ArrayList<CartVO>();
 	
 	public void inputCart() {
 		Scanner scan = new Scanner(System.in);
