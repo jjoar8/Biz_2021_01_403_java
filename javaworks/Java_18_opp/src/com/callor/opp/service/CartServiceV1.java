@@ -6,10 +6,21 @@ import java.util.Scanner;
 
 import com.callor.opp.model.CartVO;
 
+/*
+ * Service 클래스
+ * main() method에서 구현한 코드들을
+ * 별도의 크랠스로 분리하고
+ * 작은 method 단위로 코드를 작성하여
+ * 전체적으로 단위코드가 작아지도록 하기 위한 기법
+ * 이후에 유지보수(업그레이드, 오류정정)를
+ * 		유리하게 하기위한 방법
+ * 
+ */
+
 public class CartServiceV1 {
 	
 	// CartServiceV1 클래스에 cartList 객체를 인스턴스변수로 선언
-	private List<CartVO> cartList = new ArrayList<CartVO>();
+	List<CartVO> cartList = new ArrayList<CartVO>();
 	
 	public void inputCart() {
 		Scanner scan = new Scanner(System.in);
