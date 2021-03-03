@@ -39,7 +39,7 @@ public class CartServiceV1 implements CartService {
 
 			try {
 				intPrice = Integer.valueOf(strPrice);
-				if (intPrice < 100) {
+				if (intPrice <= 100) {
 					System.out.println("단가는 100원 이상");
 				} else {
 					break;
@@ -56,7 +56,7 @@ public class CartServiceV1 implements CartService {
 
 			try {
 				intQty = Integer.valueOf(strQty);
-				if (intQty < 0) {
+				if (intQty <= 1) {
 					System.out.println("수량은 1개 이상");
 				} else {
 					break;
