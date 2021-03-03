@@ -19,9 +19,9 @@ public class Shop_01 {
 			} else if (menu == 1) {
 				cService.inputCart();
 			} else if (menu == 2) {
-				cService.printCartAll();
+				cService.printAllCart();
 			} else if (menu == 3) {
-				cService.printCart();
+				cService.printUserCart();
 			}
 			
 		}

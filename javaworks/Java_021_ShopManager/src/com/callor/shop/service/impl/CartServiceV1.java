@@ -69,6 +69,7 @@ public class CartServiceV1 implements CartService {
 		// 합계
 		int intTotal = intPrice * intQty;
 
+		// CartVO에 있는 변수를 가져와 각각 값을 저장
 		CartVO cartVO = new CartVO();
 		cartVO.setUserName(strUserName);
 		cartVO.setProductName(strProductName);
@@ -76,17 +77,18 @@ public class CartServiceV1 implements CartService {
 		cartVO.setQty(intQty);
 		cartVO.setTotal(intTotal);
 
+		// cartList 리스트에 저장
 		cartList.add(cartVO);
 
 	}
 
 	@Override
-	public void printCartAll() {
+	public void printAllCart() { // 전체 리스트
 
 		int nSize = cartList.size();
 		// 카트리스트에 들어있는 리스트 개수를 세어
 		// nSize에 정수로 저장한다
-		int checkProduct = 0;
+		int countProduct = 0;
 		int totalSum = 0;
 
 		System.out.println("* 전체 장바구니 리스트");
@@ -100,23 +102,23 @@ public class CartServiceV1 implements CartService {
 			System.out.print(cartList.get(i).getQty() + "\t");
 			System.out.print(cartList.get(i).getPrice() + "\t");
 			System.out.println(cartList.get(i).getTotal());
-			checkProduct++;
-			totalSum += Integer.valueOf(cartList.get(i).getTotal());
+			countProduct++;
+			totalSum += cartList.get(i).getTotal();
 		}
 
 		System.out.println("------------------------------------------------");
 		System.out.print("총합계\t");
-		System.out.print(checkProduct + "가지\t");
+		System.out.print(countProduct + "가지\t");
 		System.out.println("\t\t" + totalSum);
 		System.out.println("================================================");
 
 	}
 
 	@Override
-	public void printCart() {
+	public void printUserCart() {
 
 		int nSize = cartList.size();
-		int checkProduct = 0;
+		int countProduct = 0;
 		int totalSum = 0;
 		while (true) {
 			System.out.println("구매자 이름을 입력해주세요");
@@ -128,19 +130,21 @@ public class CartServiceV1 implements CartService {
 			System.out.println("구매자\t상품명\t단가\t수량\t합계");
 			System.out.println("------------------------------------------------");
 			for (int i = 0; i < nSize; i++) {
+				// equals를 사용해서 문자열을 비교하고
+				// 값이 같을 경우에만 코드 실행
 				if (strUserName.equals(cartList.get(i).getUserName())) {
 					System.out.print(cartList.get(i).getUserName() + "\t");
 					System.out.print(cartList.get(i).getProductName() + "\t");
 					System.out.print(cartList.get(i).getQty() + "\t");
 					System.out.print(cartList.get(i).getPrice() + "\t");
 					System.out.println(cartList.get(i).getTotal());
-					checkProduct++;
-					totalSum += Integer.valueOf(cartList.get(i).getTotal());
+					countProduct++;
+					totalSum += cartList.get(i).getTotal();
 				}
 			} // end for
 			System.out.println("------------------------------------------------");
 			System.out.print("총합계\t");
-			System.out.print(checkProduct + "가지\t");
+			System.out.print(countProduct + "가지\t");
 			System.out.println("\t\t" + totalSum);
 			System.out.println("================================================");
 			break;
