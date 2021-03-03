@@ -103,7 +103,7 @@ public class CartServiceV1 implements CartService {
 		}
 
 		System.out.println("------------------------------------------------");
-		System.out.print("합계\t");
+		System.out.print("총합계\t");
 		System.out.print(checkProduct + "가지\t");
 		System.out.println("\t\t" + totalSum);
 		System.out.println("================================================");
@@ -138,7 +138,7 @@ public class CartServiceV1 implements CartService {
 					}
 				} // end for
 				System.out.println("------------------------------------------------");
-				System.out.print("합계\t");
+				System.out.print("총합계\t");
 				System.out.print(checkProduct + "가지\t");
 				System.out.println("\t\t" + totalSum);
 				System.out.println("================================================");
