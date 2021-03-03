@@ -56,7 +56,7 @@ public class CartServiceV1 implements CartService {
 
 			try {
 				intQty = Integer.valueOf(strQty);
-				if (intQty <= 1) {
+				if (intQty <= 1) { // 원하는 기준을 확실하게
 					System.out.println("수량은 1개 이상");
 				} else {
 					break;
