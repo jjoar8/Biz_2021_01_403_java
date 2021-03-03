@@ -84,6 +84,8 @@ public class CartServiceV1 implements CartService {
 	public void printCartAll() {
 
 		int nSize = cartList.size();
+		// 카트리스트에 들어있는 리스트 개수를 세어
+		// nSize에 정수로 저장한다
 		int checkProduct = 0;
 		int totalSum = 0;
 
