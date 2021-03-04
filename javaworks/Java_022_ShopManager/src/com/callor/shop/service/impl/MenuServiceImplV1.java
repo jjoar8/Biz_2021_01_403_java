@@ -39,7 +39,8 @@ public class MenuServiceImplV1 implements MenuService{
 			System.out.printf("%d. 장바구니 추가\n", Values.MENU_INPUT);
 			System.out.printf("%d. 장바구니 전체 보기\n", Values.MENU_ALL_LIST);
 			System.out.printf("%d. 구매자별 장바구니 보기\n", Values.MENU_USER_LIST);
-			System.out.printf("QUIT. 업무종료");
+			System.out.printf("%d. 장바구니 파일 저장\n", Values.MENU_SAVE_CART_LIST);
+			System.out.printf("QUIT. 업무종료\n");
 			System.out.println(Values.sLine);
 			System.out.print("선택 >> ");
 			
@@ -65,14 +66,14 @@ public class MenuServiceImplV1 implements MenuService{
 			try {
 				intMenu = Integer.valueOf(strMenu);
 			} catch (Exception e) {
-				System.out.printf("메뉴는 QUIT, %d ~ %d 입력 가능", Values.MENU_START, Values.MENU_LAST);
+				System.out.printf("메뉴는 QUIT, %d ~ %d 입력 가능\n", Values.MENU_START, Values.MENU_LAST);
 				continue;
 			}
 			
 			if(intMenu >= Values.MENU_START && intMenu <= Values.MENU_LAST) {
 				return intMenu;
 			} else {
-				System.out.printf("업무는 %d ~ %d 중에서 선택", Values.MENU_START, Values.MENU_LAST);
+				System.out.printf("업무는 %d ~ %d 중에서 선택\n", Values.MENU_START, Values.MENU_LAST);
 			}
 
 		}
