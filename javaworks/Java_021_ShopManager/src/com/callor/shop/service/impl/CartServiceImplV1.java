@@ -7,20 +7,24 @@ import java.util.Scanner;
 import com.callor.shop.model.CartVO;
 import com.callor.shop.service.CartService;
 
-public class CartServiceV1 implements CartService {
+//implements CartService interface
+public class CartServiceImplV1 implements CartService {
 
-	// 스캐너, 리스트
+	// 키보드 입력값을 받기 위해
+	// Scanner 클래스를 사용하여 scan 객체 선언
 	private Scanner scan;
+	// CartVO 클래스에 따른 변수값을 저장할 리스트 선언
 	private List<CartVO> cartList;
 
-	public CartServiceV1() {
+	// 메모리 관리를 위해 선언과 초기화 분리
+	public CartServiceImplV1() {
+		// scan 객체 초기화
 		scan = new Scanner(System.in);
 		cartList = new ArrayList<CartVO>();
 	}
 
 	@Override
 	public void inputCart() {
-		// 장바구니에 상품을 추가합니다
 		System.out.println("================================================");
 		System.out.println("장바구니 상품 담기");
 		System.out.println("------------------------------------------------");
@@ -38,6 +42,8 @@ public class CartServiceV1 implements CartService {
 			String strPrice = scan.nextLine();
 
 			try {
+				// 숫자가 아닌 값을 입력하면
+				// exception 오류가 발생하는 부분
 				intPrice = Integer.valueOf(strPrice);
 				if (intPrice < 100) {
 					System.out.println("단가는 100원 이상");
