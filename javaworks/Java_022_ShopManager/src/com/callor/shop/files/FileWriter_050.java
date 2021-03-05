@@ -6,10 +6,10 @@ public class FileWriter_050 {
 	
 	public static void main(String[] args) {
 		
-		RndServiceImplV10 rndService = new RndServiceImplV10();
+		RndServiceImplV10 rService = new RndServiceImplV10();
 		
-		rndService.makeRnd();
-		rndService.saveFileRnd();
+		rService.makeRnd();
+		rService.saveFileRnd();
 		
 		
 	}
