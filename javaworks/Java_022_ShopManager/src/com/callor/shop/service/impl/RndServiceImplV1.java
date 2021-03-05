@@ -8,47 +8,50 @@ import java.util.List;
 import java.util.Random;
 
 public class RndServiceImplV1 {
-	
+
 	private String strFile = "src/com/callor/shop/files/nums.txt";
-	private List<String> strList = new ArrayList<String>();
+	private List<String> strList;
 	
+	public RndServiceImplV1() {
+		strList = new ArrayList<String>();
+	}
+
 	public void makeNums() {
 
 		Random rnd = new Random();
-		for(int i = 0; i < 100; i++) {
+		for (int i = 0; i < 100; i++) {
 			int intNums = rnd.nextInt(1000) + 1;
 			strList.add(String.valueOf(intNums) + ":");
-			if((i + 1) % 5 == 0) {
+			if ((i + 1) % 5 == 0) {
 				strList.add("\n");
 			}
-			
-		}
+		} // end for
 		
 	}
-	
+
 	public void saveFileNums() {
-		
+
 		FileWriter fileWriter = null;
 		PrintWriter printer = null;
-		
+
 		try {
 			fileWriter = new FileWriter(strFile);
 			printer = new PrintWriter(fileWriter);
-			
-			for(int i = 0; i < strList.size(); i++) {
+
+			for (int i = 0; i < strList.size(); i++) {
 				printer.print(strList.get(i));
 			}
-			
+
 			printer.close();
 			fileWriter.close();
-			
+
 			System.out.println("txt 파일로 저장 완료");
-			
+
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
 	}
-
+	
 }
