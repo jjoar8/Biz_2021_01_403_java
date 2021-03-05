@@ -8,8 +8,8 @@ public class FileWriter_05 {
 		
 		RndServiceImplV1 rndService = new RndServiceImplV1();
 		
-		rndService.makeNums();
-		rndService.saveFileNums();
+		rndService.makeRnd();
+		rndService.saveFileRnd();
 		
 		
 	}

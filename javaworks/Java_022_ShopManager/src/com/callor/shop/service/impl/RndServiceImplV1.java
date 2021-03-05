@@ -16,7 +16,7 @@ public class RndServiceImplV1 {
 		strList = new ArrayList<String>();
 	}
 
-	public void makeNums() {
+	public void makeRnd() {
 
 		Random rnd = new Random();
 		for (int i = 0; i < 100; i++) {
@@ -29,7 +29,7 @@ public class RndServiceImplV1 {
 		
 	}
 
-	public void saveFileNums() {
+	public void saveFileRnd() {
 
 		FileWriter fileWriter = null;
 		PrintWriter printer = null;
