@@ -9,7 +9,6 @@ import java.util.Random;
 
 public class RndServiceImplV1 {
 
-	private String strFile = "src/com/callor/shop/files/nums.txt";
 	private List<String> strList;
 	
 	public RndServiceImplV1() {
@@ -19,6 +18,7 @@ public class RndServiceImplV1 {
 	public void makeRnd() {
 
 		Random rnd = new Random();
+		
 		for (int i = 0; i < 100; i++) {
 			int intNums = rnd.nextInt(1000) + 1;
 			strList.add(String.valueOf(intNums) + ":");
@@ -30,6 +30,8 @@ public class RndServiceImplV1 {
 	}
 
 	public void saveFileRnd() {
+		
+		String strFile = "src/com/callor/shop/files/nums.txt";
 
 		FileWriter fileWriter = null;
 		PrintWriter printer = null;
