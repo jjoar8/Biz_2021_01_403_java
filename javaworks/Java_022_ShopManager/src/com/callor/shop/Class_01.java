@@ -9,7 +9,7 @@ package com.callor.shop;
 public class Class_01 extends Object{
 	
 	/*
-	 * 원천적으로 모든 크랠스는
+	 * 원천적으로 모든 클래스는
 	 * Object 클래스에 만들어져(정의되어 있는)
 	 * 		toString() method를 가지고 있다
 	 * toString() method는
