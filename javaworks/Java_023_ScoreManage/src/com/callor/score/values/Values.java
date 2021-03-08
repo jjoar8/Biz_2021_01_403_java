@@ -12,4 +12,7 @@ public class Values {
 	public final static Integer MENU_SAVE_SCORE = 2;
 	public final static Integer MENU_LOAD_SCORE = 3;
 	
+	public final static Integer NUMBER_OF_STUDENT = 20;
+	public final static Integer NUMBER_OF_SUBJECT = 5;
+	
 }
