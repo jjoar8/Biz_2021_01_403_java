@@ -13,7 +13,8 @@ public class ScoreEX_01 {
 		ScoreService sService = new ScoreServiceImplV1();
 		
 		sService.makeScore();
-		
+		sService.saveScoreToFile();
+		sService.loadScoreFromFile();
 		
 	}
 
